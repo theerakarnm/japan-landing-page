@@ -1,5 +1,5 @@
 import React from "react";
-import { LazyImage, ImageWithLazyFill,MenuDropdown } from "../components";
+import { LazyImage, ImageWithLazyFill, MenuDropdown } from "../components";
 
 type Props = {};
 
@@ -56,14 +56,19 @@ const Section1 = (props: Props) => {
             </div>
           </div>
         </nav>
-        <MenuDropdown/>
+        <div className="bg-white w-[100vw] h-auto py-4 px-6 absolute z-10 top-0">
+          <div className='absolute top-4 right-6 cursor-pointer'>
+            <span className='text-2xl'>&#10006;</span>
+          </div>
+          <MenuDropdown />
+        </div>
         <section className="w-full h-auto">
           <div className="flex justify-center items-center ">
             <div className="block w-[100vw] h-[66.66vh] relative">
-            <ImageWithLazyFill
-              css="object-contain relative h-[unset]"
-              source={`/images/833 tran.png`}
-            />
+              <ImageWithLazyFill
+                css="object-contain relative h-[unset]"
+                source={`/images/833 tran.png`}
+              />
             </div>
           </div>
         </section>
