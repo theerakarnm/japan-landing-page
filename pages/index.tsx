@@ -1,10 +1,11 @@
 import type { NextPage } from 'next'
+import { Section1 } from '../components'
 
 const Home: NextPage = () => {
   return (
-    <div>
-      <h1 className='text-red-800'>start</h1>
-    </div>
+    <>
+      <Section1/>
+    </>
   )
 }
 
