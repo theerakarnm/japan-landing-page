@@ -1,5 +1,5 @@
 import type { NextPage } from 'next'
-import { Section1, Section2,Section3 } from '../components'
+import { Section1, Section2, Section3, Section4 } from '../components'
 
 const Home: NextPage = () => {
   return (
@@ -7,6 +7,7 @@ const Home: NextPage = () => {
       <Section1/>
       <Section2/>
       <Section3/>
+      <Section4/>
     </>
   )
 }
