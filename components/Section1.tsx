@@ -13,7 +13,7 @@ const Section1 = (props: Props) => {
     <>
       <section className="w-full bg-section-1 pt-4 pb-16 h-auto">
         <nav className="flex justify-between items-center px-6">
-          <div className="w-14 h-24 bg-slate-500">{/* TODO : LOGO */}</div>
+          <div className="w-16 h-28 bg-slate-500">{/* TODO : LOGO */} <span className="text-white">LOGO</span></div>
           <div className="flex justify-around items-center">
             <div className="cursor-pointer">
               <a href="tel:0631236001" className="cursor-pointer">
