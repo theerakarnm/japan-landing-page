@@ -5,7 +5,7 @@ import { LazyImage, ImageWithLazyFill, MenuDropdown } from "../components";
 type Props = {};
 
 const Section1 = (props: Props) => {
-  const [isNavOpen, setIsNavOpen] = useState<boolean>(false);
+  const [isNavOpen, setIsNavOpen] = useState<boolean>(true);
 
   const toggleNavbar = () => {
     setIsNavOpen(!isNavOpen)
@@ -16,19 +16,19 @@ const Section1 = (props: Props) => {
         <nav className="flex justify-between items-start px-6">
           <div className="w-16 h-28 bg-slate-500">{/* TODO : LOGO */} <span className="text-white">LOGO</span></div>
           <div className="hidden xl:flex flex-col lg:flex-row  justify-center items-center lg:items-start mt-4">
-            <div className='cursor-pointer w-[220px] h-[180px] mx-1'>
+            <div className='cursor-pointer w-[13.75rem] h-[11.25rem]'>
               <CloudMenu link="#" src='/images/cloud-1.png' content='こだわり' content2='Excursive' />
             </div>
-            <div className='cursor-pointer w-[220px] h-[180px] mx-1 mt-0 lg:mt-[6rem]'>
+            <div className='cursor-pointer w-[13.75rem] h-[11.25rem] mt-0 lg:mt-[6rem]'>
               <CloudMenu link="#" src='/images/cloud-2.png' content='お食事' content2='Food Menu' />
             </div>
-            <div className='cursor-pointer w-[220px] h-[180px] mx-1'>
+            <div className='cursor-pointer w-[13.75rem] h-[11.25rem]'>
               <CloudMenu link="#" src='/images/cloud-3.png' content='お飲み物' content2='Drinks' />
             </div>
-            <div className='cursor-pointer w-[220px] h-[180px] mx-1 mt-0 lg:mt-[6rem]'>
+            <div className='cursor-pointer w-[13.75rem] h-[11.25rem] mt-0 lg:mt-[6rem]'>
               <CloudMenu link="#" src='/images/cloud-4.png' content='お知らせ' content2='What ‘s new' />
             </div>
-            <div className='cursor-pointer w-[220px] h-[180px] mx-1'>
+            <div className='cursor-pointer w-[13.75rem] h-[11.25rem]'>
               <CloudMenu link="#" src='/images/cloud-5.png' content='営業時間/アクセス' content2='Business Hours/Access' />
             </div>
           </div>

@@ -14,7 +14,7 @@ const CloudMenu = ({ src, content, content2, link }: Props) => {
     <>
       <Link href={link}>
         <a className='hover:text-orange-300 transition-all'>
-          <div className={`absolute w-[190px] h-[155px]`}>
+          <div className={`absolute w-[11.875rem] h-[9.68rem]`}>
             <div className='flex justify-end'>
               <LazyImage source={src} w={160} h={70} />
             </div>
