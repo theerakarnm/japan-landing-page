@@ -1,6 +1,4 @@
 import React from 'react'
-import { ImageWithLazyFill, ImageWithLazyFill2 } from '.'
-
 type Props = {}
 
 const Section4 = (props: Props) => {
