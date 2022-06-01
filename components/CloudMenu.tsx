@@ -19,7 +19,7 @@ const CloudMenu = ({ src, content, content2, link }: Props) => {
               <LazyImage source={src} w={180} h={90} />
             </div>
             <div className='absolute bottom-0 left-0'>
-              <p className='font-semibold text-3xl'>{content}</p>
+              <p className='font-semibold text-[1.6rem]'>{content}</p>
               <p className='font-normal text-lg'>{content2}</p>
             </div>
           </div>

@@ -20,16 +20,16 @@ const Section1 = (props: Props) => {
                 <CloudMenu link="#" src='/images/cloud-1.png' content='こだわり' content2='Excursive' />
               </div>
               <div className='cursor-pointer w-[220px] h-[180px] mx-1 mt-0 lg:mt-[6rem]'>
-                <CloudMenu link="#" src='/images/cloud-2.png' content='こだわり' content2='Excursive' />
+                <CloudMenu link="#" src='/images/cloud-2.png' content='お食事' content2='Food Menu' />
               </div>
               <div className='cursor-pointer w-[220px] h-[180px] mx-1'>
-                <CloudMenu link="#" src='/images/cloud-3.png' content='こだわり' content2='Excursive' />
+                <CloudMenu link="#" src='/images/cloud-3.png' content='お飲み物' content2='Drinks' />
               </div>
               <div className='cursor-pointer w-[220px] h-[180px] mx-1 mt-0 lg:mt-[6rem]'>
-                <CloudMenu link="#" src='/images/cloud-4.png' content='こだわり' content2='Excursive' />
+                <CloudMenu link="#" src='/images/cloud-4.png' content='お知らせ' content2='What ‘s new' />
               </div>
               <div className='cursor-pointer w-[220px] h-[180px] mx-1'>
-                <CloudMenu link="#" src='/images/cloud-5.png' content='こだわり' content2='Excursive' />
+                <CloudMenu link="#" src='/images/cloud-5.png' content='営業時間/アクセス' content2='Business Hours/Access' />
               </div>
           </div>
           <div className="flex justify-around items-center">
