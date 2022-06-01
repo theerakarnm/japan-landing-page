@@ -3,9 +3,6 @@ import { LazyImage, ImageWithLazyFill, MenuDropdown } from "../components";
 
 type Props = {};
 
-
-
-
 const Section1 = (props: Props) => {
   const [isNavOpen, setIsNavOpen] = useState<boolean>(false);
 
@@ -81,7 +78,6 @@ const Section1 = (props: Props) => {
           </div>
         </section>
       </section>
-
     </>
   );
 };
