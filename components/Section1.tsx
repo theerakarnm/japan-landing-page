@@ -1,9 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { LazyImage, ImageWithLazyFill, MenuDropdown } from "../components";
 
 type Props = {};
 
+
+
+
 const Section1 = (props: Props) => {
+  const [isNavOpen, setIsNavOpen] = useState<boolean>(false);
+
+  const toggleNavbar = () => {
+    setIsNavOpen(!isNavOpen)
+  }
   return (
     <>
       <section className="w-full bg-section-1 py-4 h-auto">
@@ -21,7 +29,7 @@ const Section1 = (props: Props) => {
                 </div>
               </a>
             </div>
-            <div className="w-14 h-14 hover:w-16 hover:h-16 cursor-pointer transition-all rounded-full bg-red-400 mx-1 flex justify-center items-center">
+            <div onClick={toggleNavbar} className="w-14 h-14 hover:w-16 hover:h-16 cursor-pointer transition-all rounded-full bg-red-400 mx-1 flex justify-center items-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
@@ -56,8 +64,8 @@ const Section1 = (props: Props) => {
             </div>
           </div>
         </nav>
-        <div className="bg-white w-[100vw] h-auto py-4 px-6 absolute z-10 top-0">
-          <div className='absolute top-4 right-6 cursor-pointer'>
+        <div style={isNavOpen ? { display: "block" } : { display: "none" }} className={`bg-white w-[100vw] h-auto py-4 px-6 absolute z-10 top-0`}>
+          <div onClick={toggleNavbar} className='absolute top-4 right-6 cursor-pointer'>
             <span className='text-2xl'>&#10006;</span>
           </div>
           <MenuDropdown />
