@@ -22,7 +22,6 @@ function MyApp({ Component, pageProps }: AppProps) {
         <title>{og_seo.title}</title>
         {/* icon */}
         <link rel="icon" href={og_seo.tabimage} />
-        {/* shortcut icon */}
         <link rel="shortcut icon" href={og_seo.tabimage} />
         {/* meta:og */}
         <meta property="og:title" content={og_seo.title} />
