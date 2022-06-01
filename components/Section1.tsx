@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { CloudMenu } from './'
 import { LazyImage, ImageWithLazyFill, MenuDropdown } from "../components";
 
 type Props = {};
@@ -12,8 +13,25 @@ const Section1 = (props: Props) => {
   return (
     <>
       <section className="w-full bg-section-1 pt-4 pb-16 h-auto">
-        <nav className="flex justify-between items-center px-6">
+        <nav className="flex justify-between items-start px-6">
           <div className="w-16 h-28 bg-slate-500">{/* TODO : LOGO */} <span className="text-white">LOGO</span></div>
+          <div className="hidden xl:flex flex-col lg:flex-row  justify-center items-center lg:items-start mt-4">
+              <div className='cursor-pointer w-[220px] h-[180px] mx-1'>
+                <CloudMenu link="#" src='/images/cloud-1.png' content='こだわり' content2='Excursive' />
+              </div>
+              <div className='cursor-pointer w-[220px] h-[180px] mx-1 mt-0 lg:mt-[6rem]'>
+                <CloudMenu link="#" src='/images/cloud-2.png' content='こだわり' content2='Excursive' />
+              </div>
+              <div className='cursor-pointer w-[220px] h-[180px] mx-1'>
+                <CloudMenu link="#" src='/images/cloud-3.png' content='こだわり' content2='Excursive' />
+              </div>
+              <div className='cursor-pointer w-[220px] h-[180px] mx-1 mt-0 lg:mt-[6rem]'>
+                <CloudMenu link="#" src='/images/cloud-4.png' content='こだわり' content2='Excursive' />
+              </div>
+              <div className='cursor-pointer w-[220px] h-[180px] mx-1'>
+                <CloudMenu link="#" src='/images/cloud-5.png' content='こだわり' content2='Excursive' />
+              </div>
+          </div>
           <div className="flex justify-around items-center">
             <div className="cursor-pointer">
               <a href="tel:0631236001" className="cursor-pointer">
