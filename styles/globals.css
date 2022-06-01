@@ -5,3 +5,6 @@
 .bg-section-1 {
   background-image: url('/images/background.png');
 }
+.position-unset {
+  position: unset !important;
+}
