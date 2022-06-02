@@ -14,6 +14,7 @@ import SocialMediaLink from './SocialMediaLink'
 import WhatNewElem from './WhatNewElem'
 import Map from "./Map";
 import Footer from "./Footer";
+import FooterItem from "./FooterItem";
 
 export {
     Section1,
@@ -31,5 +32,6 @@ export {
     SocialMediaLink,
     WhatNewElem,
     Map,
-    Footer
+    Footer,
+    FooterItem
 }

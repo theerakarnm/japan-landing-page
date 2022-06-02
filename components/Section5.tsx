@@ -21,7 +21,7 @@ const Section5 = (props: Props) => {
   return (
     <>
       <div className="my-10 container mx-auto p-4">
-        <h1 className="text-[2.3rem] font-bold text-center">{`What's New`}</h1>
+        <h1 className="text-3xl md:text-[2.3rem] font-bold text-center">{`What's New`}</h1>
         <div className="mt-3">
           {contentWhatNew.map((data, index) => {
             return <WhatNewElem key={index} data={data} />;
