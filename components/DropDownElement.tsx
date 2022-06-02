@@ -1,5 +1,5 @@
 import React from 'react'
-import { LazyImage } from './'
+import { LazyImage, ImageWithLazyFill } from './'
 import Link from 'next/link'
 
 type Props = {
@@ -13,12 +13,15 @@ const DropDownElement = ({ src, context, to }: Props) => {
     <Link href={to}>
       <a>
         <div className="flex items-center my-3">
-          <div className="flex justify-center-items-center mx-6">
+          {/* <div className="flex justify-center-items-center mx-6">
             <LazyImage source={src} w={100} h={100} />
+          </div> */}
+          <div className="block relative w-[4rem] h-[4.25rem] md:w-[6.25rem] md:h-[6.25rem] mx-6">
+            <ImageWithLazyFill source={src}/>
           </div>
           <div className="flex flex-col justify-center-items-center">
-            <p className='font-semibold text-3xl'>{context[0]}</p>
-            <p className='font-normal text-lg text-[#3A7C4E]'>{context[1]}</p>
+            <p className='font-semibold text-lg md:text-2xl lg:text-3xl'>{context[0]}</p>
+            <p className='font-normal text-sm md:text-md lg:text-lg text-[#3A7C4E]'>{context[1]}</p>
           </div>
         </div>
       </a>

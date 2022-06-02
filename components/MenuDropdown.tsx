@@ -6,7 +6,7 @@ type Props = {}
 const MenuDropdown = (props: Props) => {
   return (
     <>
-      <div className="my-16 p-6">
+      <div className="my-16 ml-6">
         <div className="flex flex-col justify-center items-start">
           <DropDownElement to="#" src='/images/MenuDuck-1.png' context={['お知らせ','What ‘s new']}/>
           <DropDownElement to="#" src='/images/MenuDuck-2.png' context={['こだわり','Excursive']}/>
