@@ -11,7 +11,7 @@ type Props = {
 const DropDownElement = ({ src, context, to }: Props) => {
   return (
     <Link href={to}>
-      <a>
+      <a className="hover:text-[#3A7C4E] transition-all">
         <div className="flex items-center my-3">
           <div className="block relative w-[4rem] h-[4.25rem] md:w-[6.25rem] md:h-[6.25rem] mx-6">
             <ImageWithLazyFill source={src} />
