@@ -62,7 +62,7 @@ const Section1 = (props: Props) => {
           </div>
           <div className="flex justify-around items-center">
             <div className="cursor-pointer">
-              <a href="tel:0631236001" className="cursor-pointer">
+              <a href="tel:0422249383" className="cursor-pointer">
                 <div className="cursor-pointer w-14 h-14 hover:w-16 hover:h-16 transition-all rounded-full bg-[#26809d] mx-1 flex justify-center items-center">
                   <LazyImage
                     w={`30px`}
