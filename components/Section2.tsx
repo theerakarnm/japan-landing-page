@@ -1,7 +1,7 @@
-import React from 'react'
-import { ImageWithLazyFill, ImageWithLazyFill2 } from './'
+import React from "react";
+import { ImageWithLazyFill, ImageWithLazyFill2 } from "./";
 
-type Props = {}
+type Props = {};
 
 const Section2 = (props: Props) => {
   return (
@@ -9,18 +9,18 @@ const Section2 = (props: Props) => {
       <div>
         <div className="block w-[100%] h-full relative">
           <img src="/images/waragamoset4K.png" alt="waragamoset image" />
-          <div className='hidden lg:block'>
-            <div className='absolute w-[100%] h-[14rem] z-10 bottom-0'>
-              <ImageWithLazyFill source='/svg/wave.svg' />
+          <div className="hidden lg:block">
+            <div className="absolute w-[100%] h-[14rem] z-10 bottom-0">
+              <ImageWithLazyFill source="/svg/wave.svg" />
             </div>
-            <div className='absolute w-[100%] h-[14rem] z-10 bottom-0 blur-lg'>
-              <ImageWithLazyFill source='/svg/wave.svg'  />
+            <div className="absolute w-[100%] h-[14rem] z-10 bottom-0 blur-lg">
+              <ImageWithLazyFill source="/svg/wave.svg" />
             </div>
           </div>
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Section2
+export default Section2;
