@@ -1,5 +1,5 @@
 import React from "react";
-import { WhatNewElem } from './'
+import { WhatNewElem, Map, SocialMediaLink } from "./";
 
 type Props = {};
 
@@ -30,8 +30,16 @@ const Section5 = (props: Props) => {
       </div>
       <div>
         <div className="block w-[100%] h-full relative">
-          <img className='w-[100%]' src="/images/Location.jpg" alt="detail food image" />
+          <img
+            className="w-[100%]"
+            src="/images/Location.jpg"
+            alt="detail food image"
+          />
         </div>
+      </div>
+      <Map/>
+      <div className="flex justify-center my-6">
+        <SocialMediaLink/>
       </div>
     </>
   );

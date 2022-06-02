@@ -12,6 +12,8 @@ import Section3Item from "./Section3-item";
 import DropDownElement from './DropDownElement'
 import SocialMediaLink from './SocialMediaLink'
 import WhatNewElem from './WhatNewElem'
+import Map from "./Map";
+import Footer from "./Footer";
 
 export {
     Section1,
@@ -27,5 +29,7 @@ export {
     Section3Item,
     DropDownElement,
     SocialMediaLink,
-    WhatNewElem
+    WhatNewElem,
+    Map,
+    Footer
 }

@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import {
+  Footer,
   Section1,
   Section2,
   Section3,
@@ -15,6 +16,7 @@ const Home: NextPage = () => {
       <Section3 />
       <Section4 />
       <Section5 />
+      <Footer />
     </>
   );
 };
