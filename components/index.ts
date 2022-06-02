@@ -11,6 +11,7 @@ import CloudMenu from "./CloudMenu";
 import Section3Item from "./Section3-item";
 import DropDownElement from './DropDownElement'
 import SocialMediaLink from './SocialMediaLink'
+import WhatNewElem from './WhatNewElem'
 
 export {
     Section1,
@@ -25,5 +26,6 @@ export {
     CloudMenu,
     Section3Item,
     DropDownElement,
-    SocialMediaLink
+    SocialMediaLink,
+    WhatNewElem
 }
