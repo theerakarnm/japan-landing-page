@@ -14,8 +14,9 @@ const Section1 = (props: Props) => {
     <>
       <section className="w-full bg-section-1 pt-4 pb-16 h-auto">
         <nav className="flex justify-between items-start px-6">
-          <div className="w-16 h-28 bg-slate-500">
-            {/* TODO : LOGO */} <span className="text-white">LOGO</span>
+          <div className="block relative w-20 h-32 mt-2 ml-2">
+            {/* TODO : LOGO <span className="text-white">LOGO</span> */}
+            <ImageWithLazyFill source="/images/logo.png"/>
           </div>
           <div className="hidden xl:flex flex-col lg:flex-row  justify-center items-center lg:items-start mt-4">
             <div className="cursor-pointer w-[13.75rem] h-[11.25rem]">
@@ -114,8 +115,9 @@ const Section1 = (props: Props) => {
           className={`bg-white w-[100vw] h-auto py-4 px-6 absolute z-10 top-0`}
         >
           <div className="flex justify-between items-center px-6">
-            <div className="w-16 h-28 bg-slate-500">
-              {/* TODO : LOGO */} <span className="text-white">LOGO</span>
+            <div className="w-20 h-32 block relative mt-2">
+            <ImageWithLazyFill source="/images/logo.png"/>
+
             </div>
             <div className="flex justify-center items-center">
               <div className="cursor-pointer">
