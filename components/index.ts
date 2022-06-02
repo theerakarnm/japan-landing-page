@@ -8,6 +8,7 @@ import ImageWithLazyFill2 from "./LazyImageFill2";
 import MenuDropdown from "./MenuDropdown";
 import CloudMenu from "./CloudMenu";
 import Section3Item from "./Section3-item";
+import DropDownElement from './DropDownElement'
 
 export {
     Section1,
@@ -19,5 +20,6 @@ export {
     ImageWithLazyFill2,
     MenuDropdown,
     CloudMenu,
-    Section3Item
+    Section3Item,
+    DropDownElement
 }
