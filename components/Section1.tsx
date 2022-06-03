@@ -6,30 +6,33 @@ type Props = {};
 
 const Section1 = (props: Props) => {
   const [isNavOpen, setIsNavOpen] = useState<boolean>(false);
-  const [height, setHeight] = useState<number | string>('h-[0px]');
+  const [height, setHeight] = useState<number | string>("h-[0px]");
 
   const toggleNavbar = () => {
-    if(!isNavOpen) {
+    if (!isNavOpen) {
+      document.body.style.overflow = "hidden";
       setIsNavOpen(!isNavOpen);
       setTimeout(() => {
-        setHeight('h-[100vh] py-4')
-      },300)
+        setHeight("h-[120vh] py-4");
+      }, 300);
+    } else {
+      document.body.style.overflow = "auto";
+      setHeight("h-[0px] py-0");
+      setTimeout(() => {
+        setIsNavOpen(!isNavOpen);
+      }, 300);
     }
-    setHeight('h-[0px] py-0')
-    setTimeout(() => {
-      setIsNavOpen(!isNavOpen)
-    },300)
   };
   return (
     <>
       <section className="w-full bg-section-1 pt-4 pb-16 h-auto">
         <nav className="flex justify-between items-start px-6">
-          <div className="block relative w-20 h-32 mt-2 ml-2">
+          <div className="block relative w-[7rem] h-[10rem] mt-2 ml-2">
             {/* TODO : LOGO <span className="text-white">LOGO</span> */}
-            <ImageWithLazyFill source="/images/logo.png"/>
+            <ImageWithLazyFill source="/images/logo.png" />
           </div>
-          <div className="hidden xl:flex flex-col lg:flex-row  justify-center items-center lg:items-start mt-4">
-            <div className="cursor-pointer w-[13.75rem] h-[11.25rem]">
+          <div className="hidden xl:flex flex-col lg:flex-row justify-center items-center lg:items-start mt-4 fixed w-full z-[6]">
+            <div className="cursor-pointer w-[12rem] h-[11.25rem]">
               <CloudMenu
                 link="#"
                 src="/images/cloud-1.png"
@@ -37,7 +40,7 @@ const Section1 = (props: Props) => {
                 content2="Excursive"
               />
             </div>
-            <div className="cursor-pointer w-[13.75rem] h-[11.25rem] mt-0 lg:mt-[6rem]">
+            <div className="cursor-pointer w-[12rem] h-[11.25rem] mt-0 lg:mt-[6rem]">
               <CloudMenu
                 link="#"
                 src="/images/cloud-2.png"
@@ -45,7 +48,7 @@ const Section1 = (props: Props) => {
                 content2="Food Menu"
               />
             </div>
-            <div className="cursor-pointer w-[13.75rem] h-[11.25rem]">
+            <div className="cursor-pointer w-[12rem] h-[11.25rem]">
               <CloudMenu
                 link="#"
                 src="/images/cloud-3.png"
@@ -53,7 +56,7 @@ const Section1 = (props: Props) => {
                 content2="Drinks"
               />
             </div>
-            <div className="cursor-pointer w-[13.75rem] h-[11.25rem] mt-0 lg:mt-[6rem]">
+            <div className="cursor-pointer w-[12rem] h-[11.25rem] mt-0 lg:mt-[6rem]">
               <CloudMenu
                 link="#"
                 src="/images/cloud-4.png"
@@ -61,7 +64,7 @@ const Section1 = (props: Props) => {
                 content2="What's new"
               />
             </div>
-            <div className="cursor-pointer w-[13.75rem] h-[11.25rem]">
+            <div className="cursor-pointer w-[12rem] h-[11.25rem]">
               <CloudMenu
                 link="#"
                 src="/images/cloud-5.png"
@@ -71,7 +74,7 @@ const Section1 = (props: Props) => {
               />
             </div>
           </div>
-          <div className="flex justify-around items-center">
+          <div className="flex justify-end items-center">
             <div className="cursor-pointer">
               <a href="tel:0422249383" className="cursor-pointer">
                 <div className="cursor-pointer w-14 h-14 hover:w-16 hover:h-16 transition-all rounded-full bg-[#26809d] mx-1 flex justify-center items-center">
@@ -122,13 +125,12 @@ const Section1 = (props: Props) => {
           </div>
         </nav>
         <div
-          style={(isNavOpen ? { display: "block" } : { display: "none" })}
+          style={isNavOpen ? { display: "block" } : { display: "none" }}
           className={`w-[100vw]  px-6 absolute z-10 top-0 bg-white transition-all overflow-auto ${height}`}
         >
           <div className="flex justify-between items-center px-6">
-            <div className="w-20 h-32 block relative mt-2">
-            <ImageWithLazyFill source="/images/logo.png"/>
-
+            <div className="w-[7rem] h-[10rem] block relative mt-2">
+              <ImageWithLazyFill source="/images/logo.png" />
             </div>
             <div className="flex justify-center items-center">
               <div className="cursor-pointer">

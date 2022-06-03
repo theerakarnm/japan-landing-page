@@ -10,10 +10,10 @@ const Section2 = (props: Props) => {
         <div className="block w-[100%] h-full relative">
           <img src="/images/waragamoset4K.png" alt="waragamoset image" />
           <div className="hidden lg:block">
-            <div className="absolute w-[100%] h-[14rem] z-10 bottom-0">
+            <div className="absolute w-[100%] h-[14rem] z-5 bottom-0">
               <ImageWithLazyFill source="/svg/wave.svg" />
             </div>
-            <div className="absolute w-[100%] h-[14rem] z-10 bottom-0 blur-lg">
+            <div className="absolute w-[100%] h-[14rem] z-5 bottom-0 blur-lg">
               <ImageWithLazyFill source="/svg/wave.svg" />
             </div>
           </div>
