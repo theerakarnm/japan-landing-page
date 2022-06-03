@@ -8,7 +8,7 @@ const SocialMediaLink = (props: Props) => {
   return (
     <div className="flex">
       <div className="mx-1">
-        <Link href="#" target="_blank" rel="noopener noreferrer">
+        <Link href="https://facebook.com/waragamo/" target={`_blank`} rel="noopener noreferrer">
           <a>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -45,7 +45,7 @@ const SocialMediaLink = (props: Props) => {
         </Link>
       </div>
       <div className="mx-1">
-        <Link href="#" target="_blank" rel="noopener noreferrer">
+        <Link href="https://instagram.com/waragamo" target={`_blank`} rel="noopener noreferrer">
           <a>
             <svg
               xmlns="http://www.w3.org/2000/svg"

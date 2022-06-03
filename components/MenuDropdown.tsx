@@ -8,7 +8,7 @@ const MenuDropdown = (props: Props) => {
     {
       to: "/",
       src: "/images/MenuDuck-1.png",
-      context: ["お知らせ", "What ‘s new"],
+      context: ["お知らせ", "What's new"],
     },
     {
       to: "/",

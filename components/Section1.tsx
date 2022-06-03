@@ -48,7 +48,7 @@ const Section1 = (props: Props) => {
                 link="#"
                 src="/images/cloud-4.png"
                 content="お知らせ"
-                content2="What ‘s new"
+                content2="What's new"
               />
             </div>
             <div className="cursor-pointer w-[13.75rem] h-[11.25rem]">
