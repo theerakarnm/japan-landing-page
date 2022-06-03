@@ -6,9 +6,19 @@ type Props = {};
 
 const Section1 = (props: Props) => {
   const [isNavOpen, setIsNavOpen] = useState<boolean>(false);
+  const [height, setHeight] = useState<number | string>('h-[0px]');
 
   const toggleNavbar = () => {
-    setIsNavOpen(!isNavOpen);
+    if(!isNavOpen) {
+      setIsNavOpen(!isNavOpen);
+      setTimeout(() => {
+        setHeight('h-[100vh] py-4')
+      },300)
+    }
+    setHeight('h-[0px] py-0')
+    setTimeout(() => {
+      setIsNavOpen(!isNavOpen)
+    },300)
   };
   return (
     <>
@@ -57,6 +67,7 @@ const Section1 = (props: Props) => {
                 src="/images/cloud-5.png"
                 content="営業時間/アクセス"
                 content2="Business Hours/Access"
+                spacial={true}
               />
             </div>
           </div>
@@ -111,8 +122,8 @@ const Section1 = (props: Props) => {
           </div>
         </nav>
         <div
-          style={isNavOpen ? { display: "block" } : { display: "none" }}
-          className={`bg-white w-[100vw] h-auto py-4 px-6 absolute z-10 top-0`}
+          style={(isNavOpen ? { display: "block" } : { display: "none" })}
+          className={`w-[100vw]  px-6 absolute z-10 top-0 bg-white transition-all overflow-auto ${height}`}
         >
           <div className="flex justify-between items-center px-6">
             <div className="w-20 h-32 block relative mt-2">
