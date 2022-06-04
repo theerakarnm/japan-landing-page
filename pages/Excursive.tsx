@@ -8,7 +8,7 @@ const Excursive: NextPage = () => {
   const prefix = '/images'
   const content = {
     src : `${prefix}/MenuDuckWithLetter-2.png`,
-    content : [`${prefix}/無題861`]
+    content : [`${prefix}/無題861.png`]
   }
   return (
     <>

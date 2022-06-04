@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Link from 'next/link'
 import { LazyImage, ImageWithLazyFill, MenuDropdown } from "../components";
 
 type Props = {
@@ -35,7 +36,11 @@ const MiniPage = ({ srcHeader, srcContent }: Props) => {
         <nav className="flex justify-between items-start px-6">
           <div className="block relative w-[7rem] h-[10rem] mt-2 ml-2">
             {/* TODO : LOGO <span className="text-white">LOGO</span> */}
-            <ImageWithLazyFill source="/images/logo.png" />
+            <Link href="/">
+              <a>
+                <ImageWithLazyFill source="/images/logo.png" />
+              </a>
+            </Link>
           </div>
           <div className="hidden xl:flex flex-col lg:flex-row justify-center items-center lg:items-start mt-4 fixed w-full z-[6]"></div>
           <div className="flex justify-end items-center z-[9]">
@@ -104,7 +109,11 @@ const MiniPage = ({ srcHeader, srcContent }: Props) => {
         >
           <div className="flex justify-between items-center px-6">
             <div className="w-[7rem] h-[10rem] block relative mt-2">
-              <ImageWithLazyFill source="/images/logo.png" />
+            <Link href="/">
+              <a>
+                <ImageWithLazyFill source="/images/logo.png" />
+              </a>
+            </Link>
             </div>
             <div className="flex justify-center items-center">
               <div className="cursor-pointer">
@@ -163,6 +172,7 @@ const MiniPage = ({ srcHeader, srcContent }: Props) => {
         <section className="w-full h-auto">
           <div className="flex justify-center items-center">
             <div className="block w-[15rem] h-[12rem] relative">
+              
               <ImageWithLazyFill
                 css="object-contain relative h-[unset]"
                 source={srcHeader}

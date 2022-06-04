@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Link from "next/link";
 import { CloudMenu } from "./";
 import { LazyImage, ImageWithLazyFill, MenuDropdown } from "../components";
 
@@ -10,7 +11,7 @@ const Section1 = (props: Props) => {
 
   useEffect(() => {
     document.body.style.overflow = "auto";
-  }, [])
+  }, []);
 
   const toggleNavbar = () => {
     if (!isNavOpen) {
@@ -33,7 +34,11 @@ const Section1 = (props: Props) => {
         <nav className="flex justify-between items-start px-6">
           <div className="block relative w-[7rem] h-[10rem] mt-2 ml-2">
             {/* TODO : LOGO <span className="text-white">LOGO</span> */}
-            <ImageWithLazyFill source="/images/logo.png" />
+            <Link href="/">
+              <a>
+                <ImageWithLazyFill source="/images/logo.png" />
+              </a>
+            </Link>
           </div>
           <div className="hidden xl:flex flex-col lg:flex-row justify-center items-center lg:items-start mt-4 fixed w-full z-[6]">
             <div className="cursor-pointer w-[12rem] h-[11.25rem]">
@@ -80,7 +85,10 @@ const Section1 = (props: Props) => {
           </div>
           <div className="flex justify-end items-center z-[9]">
             <div className="cursor-pointer md:block hidden">
-              <a href="https://s.tabelog.com/tokyo/A1320/A132001/13187638/" className="cursor-pointer">
+              <a
+                href="https://s.tabelog.com/tokyo/A1320/A132001/13187638/"
+                className="cursor-pointer"
+              >
                 <div className="cursor-pointer w-[6rem] h-[3rem] rounded transition-all bg-teal-500 hover:bg-teal-600 hover:shadow-lg mx-1 flex justify-center items-center">
                   <span className="font-bold text-white">WEB予約</span>
                 </div>
@@ -141,7 +149,11 @@ const Section1 = (props: Props) => {
         >
           <div className="flex justify-between items-center px-6">
             <div className="w-[7rem] h-[10rem] block relative mt-2">
-              <ImageWithLazyFill source="/images/logo.png" />
+            <Link href="/">
+              <a>
+                <ImageWithLazyFill source="/images/logo.png" />
+              </a>
+            </Link>
             </div>
             <div className="flex justify-center items-center">
               <div className="cursor-pointer">

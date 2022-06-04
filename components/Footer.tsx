@@ -5,23 +5,23 @@ type Props = {};
 const Footer = (props: Props) => {
   const dropDownContents = [
     {
-      to: "/",
+      to: "/WhatNew",
       context: ["お知らせ", "What's new"],
     },
     {
-      to: "/",
+      to: "/Excursive",
       context: ["こだわり", "Excursive"],
     },
     {
-      to: "/",
+      to: "/FoodMenu",
       context: ["お食事", "Food Menu"],
     },
     {
-      to: "/",
-      context: ["お飲み物", "Drink"],
+      to: "/Drink",
+      context: ["お飲み物", "Drinks"],
     },
     {
-      to: "/",
+      to: "/Business",
       context: ["営業時間/アクセス", "Business Hours/Access"],
     },
   ];
