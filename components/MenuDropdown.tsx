@@ -6,35 +6,35 @@ type Props = {};
 const MenuDropdown = (props: Props) => {
   const dropDownContents = [
     {
-      to: "/",
+      to: "/WhatNew",
       src: "/images/MenuDuck-1.png",
       context: ["お知らせ", "What's new"],
       size: "w-[6rem] h-[6.25rem] md:w-[8rem] md:h-[8rem]",
       margin : 'ml-2'
     },
     {
-      to: "/",
+      to: "/Excursive",
       src: "/images/MenuDuck-2.png",
       context: ["こだわり", "Excursive"],
       size: "w-[4rem] h-[4.25rem] md:w-[6.25rem] md:h-[6.25rem]",
       margin : 'ml-8'
     },
     {
-      to: "/",
+      to: "/FoodMenu",
       src: "/images/MenuDuck-3.png",
       context: ["お食事", "Food Menu"],
       size: "w-[4rem] h-[4.25rem] md:w-[6.25rem] md:h-[6.25rem]",
       margin : 'ml-8'
     },
     {
-      to: "/",
+      to: "/Drink",
       src: "/images/MenuDuck-4.png",
-      context: ["お飲み物", "Drink"],
+      context: ["お飲み物", "Drinks"],
       size: "w-[4rem] h-[4.25rem] md:w-[6.25rem] md:h-[6.25rem]",
       margin : 'ml-8'
     },
     {
-      to: "/",
+      to: "/Business",
       src: "/images/MenuDuck-5.png",
       context: ["営業時間/アクセス", "Business Hours/Access"],
       size: "w-[6rem] h-[6.25rem] md:w-[8rem] md:h-[8rem]",

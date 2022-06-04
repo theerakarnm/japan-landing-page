@@ -34,7 +34,7 @@ const Section1 = (props: Props) => {
           <div className="hidden xl:flex flex-col lg:flex-row justify-center items-center lg:items-start mt-4 fixed w-full z-[6]">
             <div className="cursor-pointer w-[12rem] h-[11.25rem]">
               <CloudMenu
-                link="#"
+                link="/Excursive"
                 src="/images/cloud-1.png"
                 content="こだわり"
                 content2="Excursive"
@@ -42,7 +42,7 @@ const Section1 = (props: Props) => {
             </div>
             <div className="cursor-pointer w-[12rem] h-[11.25rem] mt-0 lg:mt-[4rem]">
               <CloudMenu
-                link="#"
+                link="/FoodMenu"
                 src="/images/cloud-2.png"
                 content="お食事"
                 content2="Food Menu"
@@ -50,7 +50,7 @@ const Section1 = (props: Props) => {
             </div>
             <div className="cursor-pointer w-[12rem] h-[11.25rem]">
               <CloudMenu
-                link="#"
+                link="/Drink"
                 src="/images/cloud-3.png"
                 content="お飲み物"
                 content2="Drinks"
@@ -58,7 +58,7 @@ const Section1 = (props: Props) => {
             </div>
             <div className="cursor-pointer w-[12rem] h-[11.25rem] mt-0 lg:mt-[4rem]">
               <CloudMenu
-                link="#"
+                link="/WhatNew"
                 src="/images/cloud-4.png"
                 content="お知らせ"
                 content2="What's new"
@@ -66,7 +66,7 @@ const Section1 = (props: Props) => {
             </div>
             <div className="cursor-pointer w-[12rem] h-[11.25rem]">
               <CloudMenu
-                link="#"
+                link="/Business"
                 src="/images/cloud-5.png"
                 content="営業時間/アクセス"
                 content2="Business Hours/Access"
