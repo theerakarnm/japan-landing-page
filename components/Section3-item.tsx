@@ -6,12 +6,13 @@ type Props = {
   src: string;
   to: string;
   noLink?: boolean;
+  size : string
 };
 
-const Section3Item = ({ src, to, noLink }: Props) => {
+const Section3Item = ({ src, to, noLink, size }: Props) => {
   if (noLink) {
     return (
-      <div className="block relative lg:w-[32rem] lg:h-[22rem] md:w-[27rem] md:h-[17rem] sm:w-[25rem] sm:h-[15rem] w-[22rem] h-[12rem]">
+      <div className={`block relative ${size}`}>
         <ImageWithLazyFill
           css="object-contain relative h-[unset]"
           source={src}
@@ -22,7 +23,7 @@ const Section3Item = ({ src, to, noLink }: Props) => {
   return (
     <Link href={to}>
       <a>
-        <div className="block relative lg:w-[32rem] lg:h-[22rem] md:w-[27rem] md:h-[17rem] sm:w-[25rem] sm:h-[15rem] w-[22rem] h-[12rem]">
+        <div className={`block relative ${size}`}>
           <ImageWithLazyFill
             css="object-contain relative h-[unset]"
             source={src}

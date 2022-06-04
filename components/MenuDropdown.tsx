@@ -9,40 +9,63 @@ const MenuDropdown = (props: Props) => {
       to: "/",
       src: "/images/MenuDuck-1.png",
       context: ["お知らせ", "What's new"],
+      size: "w-[6rem] h-[6.25rem] md:w-[8rem] md:h-[8rem]",
+      margin : 'ml-2'
     },
     {
       to: "/",
       src: "/images/MenuDuck-2.png",
       context: ["こだわり", "Excursive"],
+      size: "w-[4rem] h-[4.25rem] md:w-[6.25rem] md:h-[6.25rem]",
+      margin : 'ml-8'
     },
     {
       to: "/",
       src: "/images/MenuDuck-3.png",
       context: ["お食事", "Food Menu"],
+      size: "w-[4rem] h-[4.25rem] md:w-[6.25rem] md:h-[6.25rem]",
+      margin : 'ml-8'
     },
     {
       to: "/",
       src: "/images/MenuDuck-4.png",
       context: ["お飲み物", "Drink"],
+      size: "w-[4rem] h-[4.25rem] md:w-[6.25rem] md:h-[6.25rem]",
+      margin : 'ml-8'
     },
     {
       to: "/",
       src: "/images/MenuDuck-5.png",
       context: ["営業時間/アクセス", "Business Hours/Access"],
+      size: "w-[6rem] h-[6.25rem] md:w-[8rem] md:h-[8rem]",
+      margin : ''
     },
   ];
 
   return (
     <>
-      <div className="my-16 ml-6">
+      <div className="my-16 ml-0 sm:ml-6">
         <div className="flex flex-col justify-center items-start">
           {dropDownContents.map((dropDownContent, index) => {
+            console.log(
+              <DropDownElement
+                key={index}
+                to={dropDownContent.to}
+                src={dropDownContent.src}
+                context={dropDownContent.context}
+                size={dropDownContent.size}
+                margin={dropDownContent.margin}
+              />
+            );
+
             return (
               <DropDownElement
                 key={index}
                 to={dropDownContent.to}
                 src={dropDownContent.src}
                 context={dropDownContent.context}
+                size={dropDownContent.size}
+                margin={dropDownContent.margin}
               />
             );
           })}

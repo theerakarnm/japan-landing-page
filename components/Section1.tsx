@@ -13,8 +13,8 @@ const Section1 = (props: Props) => {
       document.body.style.overflow = "hidden";
       setIsNavOpen(!isNavOpen);
       setTimeout(() => {
-        setHeight("h-[120vh] py-4");
-      }, 300);
+        setHeight("h-[100vh] py-4");
+      }, 50);
     } else {
       document.body.style.overflow = "auto";
       setHeight("h-[0px] py-0");
@@ -74,7 +74,7 @@ const Section1 = (props: Props) => {
               />
             </div>
           </div>
-          <div className="flex justify-end items-center">
+          <div className="flex justify-end items-center z-[9]">
             <div className="cursor-pointer">
               <a href="tel:0422249383" className="cursor-pointer">
                 <div className="cursor-pointer w-14 h-14 hover:w-16 hover:h-16 transition-all rounded-full bg-[#26809d] mx-1 flex justify-center items-center">
@@ -126,7 +126,7 @@ const Section1 = (props: Props) => {
         </nav>
         <div
           style={isNavOpen ? { display: "block" } : { display: "none" }}
-          className={`w-[100vw]  px-6 absolute z-10 top-0 bg-white transition-all overflow-auto ${height}`}
+          className={`w-[100vw]  px-6 fixed z-10 top-0 bg-white transition-all overflow-auto ${height}`}
         >
           <div className="flex justify-between items-center px-6">
             <div className="w-[7rem] h-[10rem] block relative mt-2">
