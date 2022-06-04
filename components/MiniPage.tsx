@@ -1,10 +1,12 @@
 import React, { useState } from "react";
-import { CloudMenu } from "./";
 import { LazyImage, ImageWithLazyFill, MenuDropdown } from "../components";
 
-type Props = {};
+type Props = {
+  srcHeader: string;
+  srcContent: string[];
+};
 
-const MiniPage = (props: Props) => {
+const MiniPage = ({ srcHeader, srcContent }: Props) => {
   const [isNavOpen, setIsNavOpen] = useState<boolean>(false);
   const [height, setHeight] = useState<number | string>("h-[0px]");
 
@@ -159,7 +161,7 @@ const MiniPage = (props: Props) => {
             <div className="block w-[15rem] h-[12rem] relative">
               <ImageWithLazyFill
                 css="object-contain relative h-[unset]"
-                source={`/images/MenuDuckWithLetter-1.png`}
+                source={srcHeader}
               />
             </div>
           </div>
@@ -167,12 +169,16 @@ const MiniPage = (props: Props) => {
             <hr className="w-[80vw] h-[2px] mt-2 mb-10 bg-[#497556] mx-auto" />
           </div>
           <div className="flex flex-col justify-center items-center">
-            <div className="block w-[80%] h-[40rem] relative">
-              <ImageWithLazyFill
-                css="object-contain relative h-[unset]"
-                source={`/images/無題871.png`}
-              />
-            </div>
+            {srcContent.map((src, index) => {
+              return (
+                <div key={index} className="block w-[80%] h-[45rem] relative my-8">
+                  <ImageWithLazyFill
+                    css="object-contain relative h-[unset]"
+                    source={src}
+                  />
+                </div>
+              );
+            })}
           </div>
         </section>
       </section>
