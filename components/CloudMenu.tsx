@@ -17,11 +17,11 @@ const CloudMenu = ({ src, content, content2, link, spacial }: Props) => {
   if (!!spacial) {
     className = `absolute bottom-4 left-0`;
     width = `w-[14rem]`
-    flexStyle = `justify-center`
+    flexStyle = `justify-start`
   } else {
     className = `absolute bottom-5 left-0`;
     width = `w-[11rem]`
-    flexStyle = `justify-end`
+    flexStyle = `justify-center`
   }
   return (
     <>

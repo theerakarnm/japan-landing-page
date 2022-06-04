@@ -15,6 +15,7 @@ import WhatNewElem from './WhatNewElem'
 import Map from "./Map";
 import Footer from "./Footer";
 import FooterItem from "./FooterItem";
+import MiniPage from "./MiniPage";
 
 export {
     Section1,
@@ -33,5 +34,6 @@ export {
     WhatNewElem,
     Map,
     Footer,
-    FooterItem
+    FooterItem,
+    MiniPage
 }

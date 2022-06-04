@@ -4,7 +4,7 @@ import { LazyImage, ImageWithLazyFill, MenuDropdown } from "../components";
 
 type Props = {};
 
-const Section1 = (props: Props) => {
+const MiniPage = (props: Props) => {
   const [isNavOpen, setIsNavOpen] = useState<boolean>(false);
   const [height, setHeight] = useState<number | string>("h-[0px]");
 
@@ -31,52 +31,13 @@ const Section1 = (props: Props) => {
             {/* TODO : LOGO <span className="text-white">LOGO</span> */}
             <ImageWithLazyFill source="/images/logo.png" />
           </div>
-          <div className="hidden xl:flex flex-col lg:flex-row justify-center items-center lg:items-start mt-4 fixed w-full z-[6]">
-            <div className="cursor-pointer w-[12rem] h-[11.25rem]">
-              <CloudMenu
-                link="#"
-                src="/images/cloud-1.png"
-                content="こだわり"
-                content2="Excursive"
-              />
-            </div>
-            <div className="cursor-pointer w-[12rem] h-[11.25rem] mt-0 lg:mt-[4rem]">
-              <CloudMenu
-                link="#"
-                src="/images/cloud-2.png"
-                content="お食事"
-                content2="Food Menu"
-              />
-            </div>
-            <div className="cursor-pointer w-[12rem] h-[11.25rem]">
-              <CloudMenu
-                link="#"
-                src="/images/cloud-3.png"
-                content="お飲み物"
-                content2="Drinks"
-              />
-            </div>
-            <div className="cursor-pointer w-[12rem] h-[11.25rem] mt-0 lg:mt-[4rem]">
-              <CloudMenu
-                link="#"
-                src="/images/cloud-4.png"
-                content="お知らせ"
-                content2="What's new"
-              />
-            </div>
-            <div className="cursor-pointer w-[12rem] h-[11.25rem]">
-              <CloudMenu
-                link="#"
-                src="/images/cloud-5.png"
-                content="営業時間/アクセス"
-                content2="Business Hours/Access"
-                spacial={true}
-              />
-            </div>
-          </div>
+          <div className="hidden xl:flex flex-col lg:flex-row justify-center items-center lg:items-start mt-4 fixed w-full z-[6]"></div>
           <div className="flex justify-end items-center z-[9]">
             <div className="cursor-pointer md:block hidden">
-              <a href="https://s.tabelog.com/tokyo/A1320/A132001/13187638/" className="cursor-pointer">
+              <a
+                href="https://s.tabelog.com/tokyo/A1320/A132001/13187638/"
+                className="cursor-pointer"
+              >
                 <div className="cursor-pointer w-[6rem] h-[3rem] rounded transition-all bg-teal-500 hover:bg-teal-600 hover:shadow-lg mx-1 flex justify-center items-center">
                   <span className="font-bold text-white">WEB予約</span>
                 </div>
@@ -194,11 +155,22 @@ const Section1 = (props: Props) => {
           <MenuDropdown />
         </div>
         <section className="w-full h-auto">
-          <div className="flex justify-center items-center ">
-            <div className="block w-[100vw] h-[66.66vh] relative">
+          <div className="flex justify-center items-center">
+            <div className="block w-[15rem] h-[12rem] relative">
               <ImageWithLazyFill
                 css="object-contain relative h-[unset]"
-                source={`/images/background2.png`}
+                source={`/images/MenuDuckWithLetter-1.png`}
+              />
+            </div>
+          </div>
+          <div>
+            <hr className="w-[80vw] h-[2px] mt-2 mb-10 bg-[#497556] mx-auto" />
+          </div>
+          <div className="flex flex-col justify-center items-center">
+            <div className="block w-[80%] h-[40rem] relative">
+              <ImageWithLazyFill
+                css="object-contain relative h-[unset]"
+                source={`/images/無題871.png`}
               />
             </div>
           </div>
@@ -208,4 +180,4 @@ const Section1 = (props: Props) => {
   );
 };
 
-export default Section1;
+export default MiniPage;
