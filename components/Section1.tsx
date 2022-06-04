@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { CloudMenu } from "./";
 import { LazyImage, ImageWithLazyFill, MenuDropdown } from "../components";
 
@@ -7,6 +7,10 @@ type Props = {};
 const Section1 = (props: Props) => {
   const [isNavOpen, setIsNavOpen] = useState<boolean>(false);
   const [height, setHeight] = useState<number | string>("h-[0px]");
+
+  useEffect(() => {
+    document.body.style.overflow = "auto";
+  }, [])
 
   const toggleNavbar = () => {
     if (!isNavOpen) {

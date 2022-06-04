@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { LazyImage, ImageWithLazyFill, MenuDropdown } from "../components";
 
 type Props = {
@@ -9,6 +9,10 @@ type Props = {
 const MiniPage = ({ srcHeader, srcContent }: Props) => {
   const [isNavOpen, setIsNavOpen] = useState<boolean>(false);
   const [height, setHeight] = useState<number | string>("h-[0px]");
+
+  useEffect(() => {
+    document.body.style.overflow = "auto";
+  }, [])
 
   const toggleNavbar = () => {
     if (!isNavOpen) {
@@ -171,7 +175,7 @@ const MiniPage = ({ srcHeader, srcContent }: Props) => {
           <div className="flex flex-col justify-center items-center">
             {srcContent.map((src, index) => {
               return (
-                <div key={index} className="block w-[80%] h-[45rem] relative my-8">
+                <div key={index} className="block w-[90%] h-[30rem] md:w-[85%] md:h-[40rem] lg:w-[80%] lg:h-[50rem] relative my-3 md:my-8">
                   <ImageWithLazyFill
                     css="object-contain relative h-[unset]"
                     source={src}
