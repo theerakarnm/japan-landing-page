@@ -1,12 +1,20 @@
 import React from "react";
 import Link from "next/link";
 
-type Props = {};
+type Props = {
+  isCol?: boolean;
+};
 
-const SocialMediaLink = (props: Props) => {
+const SocialMediaLink = ({ isCol }: Props) => {
   // TODO: Add social media links
+
+  let col = ''
+
+  if(isCol) {
+    col = 'lg:flex-row flex-col'
+  }
   return (
-    <div className="flex">
+    <div className={`flex ${col}`}>
       <div className="mx-1">
         <Link href="https://facebook.com/waragamo/" target={`_blank`} rel="noopener noreferrer">
           <a>

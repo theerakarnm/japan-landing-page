@@ -13,7 +13,7 @@ const FooterItem = ({ data }: Props) => {
   return (
     <Link href={data.to} target={`_blank`}>
       <a>
-        <div className="flex flex-col justify-center items-center my-3">
+        <div className="flex flex-col justify-center items-center my-3 mx-4">
           <h1 className="text-2xl font-bold text-[#3A7C4E]">
             {/* text-[#3A7C4E] */}
             {data.context[0]}
