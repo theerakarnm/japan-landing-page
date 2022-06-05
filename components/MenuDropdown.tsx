@@ -10,7 +10,7 @@ const MenuDropdown = (props: Props) => {
       to: "/WhatNewPage",
       src: "/images/MenuDuck-1.png",
       context: ["お知らせ", "What's new"],
-      size: "w-[5rem] h-[5.25rem] md:w-[8rem] md:h-[8rem]",
+      size: "w-[5rem] h-[5rem] md:w-[7.65rem] md:h-[7.65rem]",
       margin : 'ml-2'
     },
     {
@@ -38,8 +38,8 @@ const MenuDropdown = (props: Props) => {
       to: "/Business",
       src: "/images/MenuDuck-5.png",
       context: ["営業時間/アクセス", "Business Hours/Access"],
-      size: "w-[5rem] h-[5.25rem] md:w-[8rem] md:h-[8rem]",
-      margin : ''
+      size: "w-[5rem] h-[5rem] md:w-[7.5rem] md:h-[7.5rem]",
+      margin : 'ml-2'
     },
   ];
 
