@@ -14,7 +14,7 @@ const Comp = () => {
         <div className="block w-[100%] h-full relative">
           <img
             className="w-[100%]"
-            src="/images/BusinessSection.png"
+            src="/images/section-bb.png"
             alt="detail food image"
           />
         </div>
