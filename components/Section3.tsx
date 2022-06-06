@@ -28,7 +28,7 @@ const Section3 = (props: Props) => {
             <Section3Item size={size[3]} to='/Drink' src='/images/無題904-drink-fixed.png'/>
           </div>
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <Section3Item size={size[5]} to='/' src='/images/couresMenu2.png'/>
+            <Section3Item size={size[5]} to='/FoodMenu' src='/images/couresMenu2.png'/>
           </div>
         </div>
       </div>
