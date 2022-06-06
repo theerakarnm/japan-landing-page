@@ -8,7 +8,7 @@ const Business: NextPage = () => {
   const prefix = '/images'
   const content = {
     src : `${prefix}/MenuDuckWithLetter-5.png`,
-    content : [`${prefix}/Location.jpg`] //TODO : What new src missing?
+    content : [`${prefix}/BusinessSection.png`] //TODO : What new src missing?
   }
   return (
     <>

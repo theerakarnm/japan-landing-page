@@ -1,3 +1,4 @@
+import { profile } from "console";
 import type { NextPage } from "next";
 import {
   Footer,
@@ -8,7 +9,7 @@ const Excursive: NextPage = () => {
   const prefix = '/images'
   const content = {
     src : `${prefix}/MenuDuckWithLetter-2.png`,
-    content : [`${prefix}/無題861.png`]
+    content : [`${prefix}/section-4.png`,`${prefix}/無題861.png`]
   }
   return (
     <>

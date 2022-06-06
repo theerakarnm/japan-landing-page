@@ -22,7 +22,7 @@ const Comp = () => {
       <Map />
       <div className="flex justify-center my-6">
         <div className="lg:hidden">
-          <div className="w-[7rem] h-[10rem] block relative mt-2">
+          <div className="w-[4rem] h-[7rem] block relative mt-2">
             <Link href="/">
               <a>
                 <ImageWithLazyFill source="/images/logo.png" />

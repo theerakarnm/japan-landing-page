@@ -5,12 +5,12 @@ type Props = {}
 
 const Section3 = (props: Props) => {
   const size = [
-    'lg:w-[28rem] lg:h-[19.5rem] md:w-[27rem] md:h-[17rem] sm:w-[25rem] sm:h-[15rem] w-[22rem] h-[12rem]',
-    'lg:w-[32rem] lg:h-[23rem] md:w-[27rem] md:h-[17rem] sm:w-[25rem] sm:h-[15rem] w-[22rem] h-[12rem]',
-    'lg:w-[32rem] lg:h-[22rem] md:w-[27rem] md:h-[17rem] sm:w-[25rem] sm:h-[15rem] w-[22rem] h-[12rem]',
-    'lg:w-[32rem] lg:h-[22rem] md:w-[27rem] md:h-[17rem] sm:w-[25rem] sm:h-[15rem] w-[22rem] h-[12rem]',
-    'lg:w-[32rem] lg:h-[22rem] md:w-[27rem] md:h-[17rem] sm:w-[25rem] sm:h-[15rem] w-[22rem] h-[12rem]',
-    'lg:w-[32rem] lg:h-[22rem] md:w-[27rem] md:h-[17rem] sm:w-[25rem] sm:h-[15rem] w-[22rem] h-[12rem]',
+    'lg:w-[19.5rem] lg:h-[19.5rem] md:w-[17rem] md:h-[17rem] sm:w-[15rem] sm:h-[15rem] w-[12rem] h-[12rem]',
+    'lg:w-[22rem] lg:h-[23rem] md:w-[17rem] md:h-[17rem] sm:w-[25rem] sm:h-[15rem] w-[15rem] h-[12rem]', // shabu
+    'lg:w-[22rem] lg:h-[22rem] md:w-[17rem] md:h-[17rem] sm:w-[25rem] sm:h-[15rem] w-[15rem] h-[12rem]', // grill
+    'lg:w-[21rem] lg:h-[21rem] md:w-[17rem] md:h-[17rem] sm:w-[25rem] sm:h-[15rem] w-[15rem] h-[12rem]', // drink
+    'lg:w-[22rem] lg:h-[22rem] md:w-[17rem] md:h-[17rem] sm:w-[26rem] sm:h-[15rem] w-[15rem] h-[12rem]', // recommend
+    'lg:w-[22rem] lg:h-[22rem] md:w-[17rem] md:h-[17rem] sm:w-[25rem] sm:h-[15rem] w-[15rem] h-[12rem]', // course menu
   ]
   return (
     <>
@@ -25,7 +25,7 @@ const Section3 = (props: Props) => {
           </div>
           <div className="flex flex-col md:flex-row justify-between items-center">
             <Section3Item size={size[4]} to='/Recommend' src='/images/無題904-3-fix.png'/>
-            <Section3Item size={size[3]} to='/Drink' src='/images/無題904-3.png'/>
+            <Section3Item size={size[3]} to='/Drink' src='/images/無題904-drink-fixed.png'/>
           </div>
           <div className="flex flex-col md:flex-row justify-between items-center">
             <Section3Item size={size[5]} to='/' src='/images/couresMenu2.png'/>
