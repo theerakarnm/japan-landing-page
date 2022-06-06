@@ -9,7 +9,7 @@ type Props = {
 
 const Comp = () => {
   return (
-    <>
+    <> 
     <div>
         <div className="block w-[100%] h-full relative">
           <img
