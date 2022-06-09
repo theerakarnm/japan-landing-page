@@ -214,7 +214,7 @@ const Section1 = (props: Props) => {
             <div className="block w-[100vw] h-[33.33vh] md:h-[66.66vh] xl:mt-20 relative">
               <ImageWithLazyFill
                 css="object-contain relative h-[unset]"
-                source={`/images/background2.png`}
+                source={`/images/BannerNew.png`}
               />
             </div>
           </div>
