@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { CloudMenu } from "./";
-import { LazyImage, ImageWithLazyFill, MenuDropdown } from "../components";
+import { LazyImage, ImageWithLazyFill, MenuDropdown, SlickCaro } from "../components";
 
 type Props = {};
 
@@ -30,17 +30,17 @@ const Section1 = (props: Props) => {
   };
   return (
     <>
-      <section className="w-full bg-section-1 pt-4 pb-16 h-auto">
+      <section className="w-full bg-section-1 pt-4 pb-0 h-auto">
         <nav className="flex justify-between items-start px-6">
-          <div className="block relative w-[7rem] h-[10rem] mt-2 ml-2">
+          <div className="">
             {/* TODO : LOGO <span className="text-white">LOGO</span> */}
-            <Link href="/">
+            {/* <Link href="/">
               <a>
                 <ImageWithLazyFill source="/images/logo.png" />
               </a>
-            </Link>
+            </Link> */}
           </div>
-          <div className="hidden xl:flex flex-col lg:flex-row justify-center items-center lg:items-start mt-4 fixed w-full z-[6]">
+          <div className="hidden xl:flex flex-col lg:flex-row justify-center items-center lg:items-start mt-4 fixed w-full z-[6] left=0">
             <div className="cursor-pointer w-[12rem] h-[11.25rem]">
               <CloudMenu
                 link="/Excursive"
@@ -211,7 +211,7 @@ const Section1 = (props: Props) => {
         </div>
         <section className="w-full h-auto">
           <div className="flex justify-center items-center ">
-            <div className="block w-[100vw] h-[66.66vh] relative">
+            <div className="block w-[100vw] h-[33.33vh] md:h-[66.66vh] xl:mt-20 relative">
               <ImageWithLazyFill
                 css="object-contain relative h-[unset]"
                 source={`/images/background2.png`}
@@ -219,6 +219,7 @@ const Section1 = (props: Props) => {
             </div>
           </div>
         </section>
+          <SlickCaro />
       </section>
     </>
   );

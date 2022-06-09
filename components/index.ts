@@ -17,6 +17,8 @@ import Footer from "./Footer";
 import FooterItem from "./FooterItem";
 import MiniPage from "./MiniPage";
 import WhatNewDetail from './WhatNewDetail'
+import SlickCaro from './SlickCaro'
+import SlideImage from './SlideImage'
 
 export {
     Section1,
@@ -37,5 +39,7 @@ export {
     Footer,
     FooterItem,
     MiniPage,
-    WhatNewDetail
+    WhatNewDetail,
+    SlickCaro,
+    SlideImage
 }
