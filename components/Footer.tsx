@@ -5,7 +5,7 @@ type Props = {};
 const Footer = (props: Props) => {
   const dropDownContents = [
     {
-      to: "/WhatNew",
+      to: "/WhatNewPage",
       context: ["お知らせ", "What's new"],
     },
     {
