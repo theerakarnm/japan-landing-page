@@ -8,7 +8,7 @@ const WhatNew: NextPage = () => {
   const prefix = '/images'
   const content = {
     src : `${prefix}/MenuDuckWithLetter-1.png`,
-    content : [`${prefix}/無題868.png`]
+    content : [`${prefix}/868.jpg`]
   }
   return (
     <>
