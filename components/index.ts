@@ -5,7 +5,6 @@ import Section4 from "./Section4";
 import Section5 from "./Section5";
 import LazyImage from "./LazyImage";
 import ImageWithLazyFill from "./LazyImageFill";
-import ImageWithLazyFill2 from "./LazyImageFill2";
 import MenuDropdown from "./MenuDropdown";
 import CloudMenu from "./CloudMenu";
 import Section3Item from "./Section3-item";
@@ -28,7 +27,6 @@ export {
     Section5,
     LazyImage,
     ImageWithLazyFill,
-    ImageWithLazyFill2,
     MenuDropdown,
     CloudMenu,
     Section3Item,

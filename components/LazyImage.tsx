@@ -1,5 +1,4 @@
 import React from 'react'
-import Image from 'next/image';
 
 type Props = {
   w: string | number
@@ -13,14 +12,12 @@ const ImageWithLazy = ({ w, h, source, layout }: Props) => {
   // typeof layout === 'undefined' ? layout = 'intrinsic' : layout = layout
   return (
     <>
-      <Image 
+       <img
       alt={`this is image of ${sourceName}`} 
-      src={source} 
+      src={source}
+      // placeholder="blur"
       width={w} 
       height={h}
-      layout={layout}
-      placeholder="blur"
-      blurDataURL={source} 
       />
     </>
   )

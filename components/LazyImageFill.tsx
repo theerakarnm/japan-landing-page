@@ -1,5 +1,4 @@
 import React from 'react'
-import Image from 'next/image';
 
 type Props = {
   source: string
@@ -10,14 +9,11 @@ const ImageWithLazyFill = ({ source,css }: Props) => {
   const sourceName = source.split('/')[source.split('/').length - 1]
   return (
     <>
-      <Image 
+      <img
       alt={`this is image of ${sourceName}`} 
-      className={css}
-      src={source} 
-      layout={`fill`}
-      placeholder="blur"
-      blurDataURL={source} 
-      objectFit="cover"
+      className={`${css} w-full h-full absolute top-0 left-0`}
+      src={source}
+      // placeholder="blur"
       />
     </>
   )
