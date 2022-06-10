@@ -30,7 +30,7 @@ const Section1 = (props: Props) => {
   };
   return (
     <>
-      <section className="w-full bg-section-1 pt-4 pb-0 h-auto">
+      <section className="w-full bg-section-1 pt-4 pb-6 h-auto">
         <nav className="flex justify-between items-start px-6">
           <div className="">
             {/* TODO : LOGO <span className="text-white">LOGO</span> */}
@@ -84,7 +84,7 @@ const Section1 = (props: Props) => {
             </div>
           </div>
           <div className="flex justify-end items-center z-[9]">
-            <div className="cursor-pointer md:block hidden">
+            <div className="cursor-pointer block">
               <a
                 href="https://s.tabelog.com/tokyo/A1320/A132001/13187638/"
                 className="cursor-pointer"

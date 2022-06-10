@@ -11,22 +11,22 @@ export const content:NewContent[] = [
   {
     id: 1,
     srcHeader: `${prefixImage}/MenuDuckWithLetter-1.png`,
-    title: `What new header`,
-    srcContent: [`${prefixImage}/something`],
-    description: `loremp ipsum dolor sit amet, consectetur adipiscing elit1.`,
+    title: `2022.06.10 (Fri)`,
+    srcContent: [`${prefixImage}/S__23846944.jpg`,`${prefixImage}/S__23846946.jpg`],
+    description: `ワラガモ7年誕生祭BAKIBAKIさんによるライブインティングを1 F の壁にて行います！こにらはYouTube とインスタライブ配信も行います。`,
   },
   {
     id: 2,
     srcHeader: `${prefixImage}/MenuDuckWithLetter-1.png`,
-    title: `Test Test TEs`,
-    srcContent: [`${prefixImage}/something`],
-    description: `loremp ipsum dolor sit amet, consectetur adipiscing elit2.`,
+    title: `最新情報　Coming Soon`,
+    srcContent: [],
+    description: ``,
   },
   {
     id: 3,
     srcHeader: `${prefixImage}/MenuDuckWithLetter-1.png`,
-    title: `Section 3 What new Title`,
-    srcContent: [`${prefixImage}/something`],
-    description: `loremp ipsum dolor sit amet, consectetur adipiscing elit3.`,
+    title: `最新情報　Coming Soon`,
+    srcContent: [],
+    description: ``,
   }
 ]
