@@ -8,7 +8,7 @@ const Recommend: NextPage = () => {
   const prefix = '/images'
   const content = {
     src : `${prefix}/MenuDuckWithLetter-4.png`,
-    content : [`${prefix}/886.png`,`${prefix}/890.png`,`${prefix}/889.png`]
+    content : [`${prefix}/886.jpg`,`${prefix}/890.jpg`,`${prefix}/889.jpg`]
   }
   return (
     <>

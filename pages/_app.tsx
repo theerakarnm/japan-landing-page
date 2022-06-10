@@ -14,7 +14,6 @@ function MyApp({ Component, pageProps }: AppProps) {
     "font-family:system-ui;font-size:1.5rem;-webkit-text-stroke: 1px black;font-weight:bold")
   return (
     <>
-      <script async type="text/javascript" src="//webfonts.sakura.ne.jp/js/sakurav3.js"></script>
       <Head>
         <meta charSet="UTF-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
