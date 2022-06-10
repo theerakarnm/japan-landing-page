@@ -14,6 +14,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     "font-family:system-ui;font-size:1.5rem;-webkit-text-stroke: 1px black;font-weight:bold")
   return (
     <>
+      <script async type="text/javascript" src="//webfonts.sakura.ne.jp/js/sakurav3.js"></script>
       <Head>
         <meta charSet="UTF-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
@@ -53,7 +54,6 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name="google" content={og_seo.google} />
         <meta name="google-site-verification" content={og_seo.google_site_verification} />
       </Head>
-
       <Component {...pageProps} />
     </>
   )

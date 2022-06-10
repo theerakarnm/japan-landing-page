@@ -67,7 +67,7 @@ const Section1 = (props: Props) => {
             </div>
             <div className="cursor-pointer w-[12rem] h-[11.25rem] mt-0 lg:mt-[4rem]">
               <CloudMenu
-                link="/WhatNew"
+                link="/WhatNewPage"
                 src="/images/cloud-4.png"
                 content="お知らせ"
                 content2="What's new"

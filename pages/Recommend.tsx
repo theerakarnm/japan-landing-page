@@ -7,8 +7,8 @@ import {
 const Recommend: NextPage = () => {
   const prefix = '/images'
   const content = {
-    src : `${prefix}/無題904-3-fix.png`,
-    content : [`${prefix}/無題894.png`,`${prefix}/無題871.png`,`${prefix}/無題872 (1).png`]
+    src : `${prefix}/904-3-fix.png`,
+    content : [`${prefix}/894.jpg`,`${prefix}/871.jpg`,`${prefix}/872 (1).jpg`]
   }
   return (
     <>

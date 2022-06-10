@@ -73,7 +73,7 @@ const SlickCaro = (props: Props) => {
         })}
       </Slider>
       <div className="container mx-auto px-4 my-10 text-[#3A7C4E]">
-        <h1 className="font-bold mb-1 text-[1.4rem]">ワラガモ（笑ウ鴨ニハ福来ル</h1>
+        <h1 className="font-bold mb-1 text-[1.4rem]">{`ワラガモ（笑ウ鴨ニハ福来ル)`}</h1>
         <h2 className="font-bold mb-2 text-[1.1rem]">6月12日リニューアルオープン</h2>
         <p>
           〜世界でここだけ！？藁焼き鴨しゃぶ酒場！！〜

@@ -8,18 +8,18 @@ const Section2 = (props: Props) => {
     <>
       <div>
         <div className="block w-[100%] h-full relative">
-          <img src="/images/waragamoset4K.png" alt="waragamoset image" />
-          <div className="hidden lg:block">
-            <div className="absolute w-[100%] h-[14rem] z-5 bottom-0">
+          <img src="/images/waragamoset4K.jpg" alt="waragamoset image" />
+          {/* <div className="hidden lg:block">
+            <div className="absolute w-[100%] h-[14rem] z-5 bottom-0 xl:bottom-12">
               <ImageWithLazyFill css="object-cover" source="/svg/wave.svg" />
             </div>
-            <div className="absolute w-[100%] h-[14rem] z-5 bottom-0 blur-lg">
+            <div className="absolute w-[100%] h-[14rem] z-5 bottom-0 xl:bottom-12 blur-lg">
               <ImageWithLazyFill css="object-cover" source="/svg/wave.svg" />
             </div>
-          </div>
+          </div> */}
         </div>
 
-        <div className="container mx-auto px-4 text-[#3A7C4E]">
+        <div className="container mx-auto px-4 mt-10 text-[#3A7C4E]">
           <h1 className="font-bold mb-2 text-[1.4rem]">Wargamo</h1>
           <p>
             Waragamo offers innovative duck cuisine with a variety of duck

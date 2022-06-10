@@ -17,15 +17,15 @@ const Section3 = (props: Props) => {
       <div className='mt-4 mb-8'>
         <div className="flex flex-col justify-center items-center">
           <div className='flex justify-center items-start'>
-            <Section3Item size={size[0]} noLink to='#' src='/images/無題904-menu.png'/>
+            <Section3Item size={size[0]} noLink to='#' src='/images/904-menu.png'/>
           </div>
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <Section3Item size={size[2]} to='/FoodMenu' src='/images/無題904-2.png'/>
-            <Section3Item size={size[1]} to='/FoodMenu' src='/images/無題904-2-fix.png'/>
+            <Section3Item size={size[2]} to='/FoodMenu' src='/images/904-2.png'/>
+            <Section3Item size={size[1]} to='/FoodMenu' src='/images/904-2-fix.png'/>
           </div>
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <Section3Item size={size[4]} to='/Recommend' src='/images/無題904-3-fix.png'/>
-            <Section3Item size={size[3]} to='/Drink' src='/images/無題904-drink-fixed.png'/>
+            <Section3Item size={size[4]} to='/Recommend' src='/images/904-3-fix.png'/>
+            <Section3Item size={size[3]} to='/Drink' src='/images/904-drink-fixed.png'/>
           </div>
           <div className="flex flex-col md:flex-row justify-between items-center">
             <Section3Item size={size[5]} to='/FoodMenu' src='/images/couresMenu2.png'/>
