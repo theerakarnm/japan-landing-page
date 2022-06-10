@@ -1,5 +1,5 @@
 import React from "react";
-import Image from 'next/image'
+// import Image from "next/image";
 
 type Props = {
   source: string;
@@ -10,7 +10,7 @@ const ImageWithLazyFill = ({ source, css }: Props) => {
   const sourceName = source.split("/")[source.split("/").length - 1];
   return (
     <>
-      <Image
+      {/* <Image
         alt={`this is image of ${sourceName}`}
         className={css}
         src={source}
@@ -18,13 +18,15 @@ const ImageWithLazyFill = ({ source, css }: Props) => {
         placeholder="blur"
         blurDataURL={source}
         objectFit="cover"
-      />
-      {/* <img
-      alt={`this is image of ${sourceName}`} 
-      className={`${css} w-full h-full absolute object-contain top-0 left-0`}
-      src={source}
-      // placeholder="blur"
       /> */}
+      <div className="flex justify-center">
+        <img
+          alt={`this is image of ${sourceName}`}
+          className={`${css} `}
+          src={source}
+          // placeholder="blur"
+        />
+      </div>
     </>
   );
 };

@@ -211,9 +211,9 @@ const Section1 = (props: Props) => {
         </div>
         <section className="w-full h-auto">
           <div className="flex justify-center items-center ">
-            <div className="block w-[100vw] h-[33.33vh] md:h-[66.66vh] xl:mt-20 relative">
+            <div className="xl:mt-20 relative">
               <ImageWithLazyFill
-                css="object-contain relative h-[unset]"
+                css="relative h-[30rem] lg:h-[40rem]"
                 source={`/images/BannerNew.png`}
               />
             </div>

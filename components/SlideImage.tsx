@@ -10,7 +10,7 @@ const SlideImage = ({ src }: Props) => {
     <div className="flex justify-center items-center ">
             <div className="block w-[100vw] h-[43vh] xl:mt-20 relative">
               <ImageWithLazyFill
-                css="object-contain relative h-[unset]"
+                css="object-contain relative h-[30rem] lg:h-[40rem]"
                 source={`${src}`}
               />
             </div>

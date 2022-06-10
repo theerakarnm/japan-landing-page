@@ -185,9 +185,9 @@ const MiniPage = ({ srcHeader, srcContent }: Props) => {
           <div className="flex flex-col justify-center items-center">
             {srcContent.map((src, index) => {
               return (
-                <div key={index} className="block w-[90%] h-[30rem] md:w-[85%] md:h-[40rem] lg:w-[80%] lg:h-[50rem] relative my-3 md:my-8">
+                <div key={index} className="block  relative my-3">
                   <ImageWithLazyFill
-                    css="object-contain relative h-[unset]"
+                    css="object-contain relative w-[90%] h-[40rem] sm:h-[50rem] md:w-[90%] md:h-[60rem] lg:w-[96%] lg:h-[70rem]"
                     source={src}
                   />
                 </div>
