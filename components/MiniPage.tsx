@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Link from 'next/link'
+import Link from "next/link";
 import { LazyImage, ImageWithLazyFill, MenuDropdown } from "../components";
 
 type Props = {
@@ -13,7 +13,7 @@ const MiniPage = ({ srcHeader, srcContent }: Props) => {
 
   useEffect(() => {
     document.body.style.overflow = "auto";
-  }, [])
+  }, []);
 
   const toggleNavbar = () => {
     if (!isNavOpen) {
@@ -46,7 +46,7 @@ const MiniPage = ({ srcHeader, srcContent }: Props) => {
           <div className="flex justify-end items-center z-[9]">
             <div className="cursor-pointer md:block hidden">
               <a
-                href="https://s.tabelog.com/tokyo/A1320/A132001/13187638/"
+                href="https://yoyaku.toreta.in/waraukamonihahukukitaru"
                 className="cursor-pointer"
               >
                 <div className="cursor-pointer w-[6rem] h-[3rem] rounded transition-all bg-teal-500 hover:bg-teal-600 hover:shadow-lg mx-1 flex justify-center items-center">
@@ -109,11 +109,11 @@ const MiniPage = ({ srcHeader, srcContent }: Props) => {
         >
           <div className="flex justify-between items-center px-6">
             <div className="w-[7rem] h-[10rem] block relative mt-2">
-            <Link href="/">
-              <a>
-                <ImageWithLazyFill source="/images/logo.png" />
-              </a>
-            </Link>
+              <Link href="/">
+                <a>
+                  <ImageWithLazyFill source="/images/logo.png" />
+                </a>
+              </Link>
             </div>
             <div className="flex justify-center items-center">
               <div className="cursor-pointer">
@@ -172,7 +172,6 @@ const MiniPage = ({ srcHeader, srcContent }: Props) => {
         <section className="w-full h-auto">
           <div className="flex justify-center items-center">
             <div className="block w-[15rem] h-[12rem] relative">
-              
               <ImageWithLazyFill
                 css="object-contain relative h-[unset]"
                 source={srcHeader}

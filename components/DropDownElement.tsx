@@ -6,12 +6,11 @@ type Props = {
   src: string;
   context: string[];
   to: string;
-  size : string
-  margin : string
+  size: string;
+  margin: string;
 };
 
 const DropDownElement = ({ src, context, to, size, margin }: Props) => {
-  console.log(size);
   return (
     <Link href={to}>
       <a className="hover:text-[#3A7C4E] transition-all">
@@ -19,10 +18,10 @@ const DropDownElement = ({ src, context, to, size, margin }: Props) => {
           <div className={`block relative ${size} mx-6`}>
             <ImageWithLazyFill source={src} />
           </div>
-          <div className={`flex flex-col justify-center-items-center ${margin}`}>
-            <p className="font-semibold text-lg md:text-2xl">
-              {context[0]}
-            </p>
+          <div
+            className={`flex flex-col justify-center-items-center ${margin}`}
+          >
+            <p className="font-semibold text-lg md:text-2xl">{context[0]}</p>
             <p className="font-normal text-sm md:text-md text-[#3A7C4E]">
               {context[1]}
             </p>

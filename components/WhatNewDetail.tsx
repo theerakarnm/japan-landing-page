@@ -1,21 +1,26 @@
 import React, { useState, useEffect } from "react";
-import Link from 'next/link'
+import Link from "next/link";
 import { LazyImage, ImageWithLazyFill, MenuDropdown } from ".";
 
 type Props = {
   srcHeader: string;
-  title : string;
+  title: string;
   srcContent: string[];
-  description : string;
+  description: string;
 };
 
-const WhatNewDetail = ({ srcHeader, title, description, srcContent }: Props) => {
+const WhatNewDetail = ({
+  srcHeader,
+  title,
+  description,
+  srcContent,
+}: Props) => {
   const [isNavOpen, setIsNavOpen] = useState<boolean>(false);
   const [height, setHeight] = useState<number | string>("h-[0px]");
 
   useEffect(() => {
     document.body.style.overflow = "auto";
-  }, [])
+  }, []);
 
   const toggleNavbar = () => {
     if (!isNavOpen) {
@@ -48,7 +53,7 @@ const WhatNewDetail = ({ srcHeader, title, description, srcContent }: Props) => 
           <div className="flex justify-end items-center z-[9]">
             <div className="cursor-pointer md:block hidden">
               <a
-                href="https://s.tabelog.com/tokyo/A1320/A132001/13187638/"
+                href="https://yoyaku.toreta.in/waraukamonihahukukitaru"
                 className="cursor-pointer"
               >
                 <div className="cursor-pointer w-[6rem] h-[3rem] rounded transition-all bg-teal-500 hover:bg-teal-600 hover:shadow-lg mx-1 flex justify-center items-center">
@@ -111,11 +116,11 @@ const WhatNewDetail = ({ srcHeader, title, description, srcContent }: Props) => 
         >
           <div className="flex justify-between items-center px-6">
             <div className="w-[7rem] h-[10rem] block relative mt-2">
-            <Link href="/">
-              <a>
-                <ImageWithLazyFill source="/images/logo.png" />
-              </a>
-            </Link>
+              <Link href="/">
+                <a>
+                  <ImageWithLazyFill source="/images/logo.png" />
+                </a>
+              </Link>
             </div>
             <div className="flex justify-center items-center">
               <div className="cursor-pointer">
@@ -186,7 +191,10 @@ const WhatNewDetail = ({ srcHeader, title, description, srcContent }: Props) => 
           <div className="flex flex-col justify-center items-center">
             {srcContent.map((src, index) => {
               return (
-                <div key={index} className="block w-[90%] h-[30rem] md:w-[85%] md:h-[40rem] lg:w-[80%] lg:h-[50rem] relative my-3 md:my-8">
+                <div
+                  key={index}
+                  className="block w-[90%] h-[30rem] md:w-[85%] md:h-[40rem] lg:w-[80%] lg:h-[50rem] relative my-3 md:my-8"
+                >
                   <ImageWithLazyFill
                     css="object-contain relative h-[unset]"
                     source={src}
