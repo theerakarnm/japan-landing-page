@@ -24,18 +24,18 @@ const Section2 = (props: Props) => {
           <p>
             Waragamo offers innovative duck cuisine with a variety of duck
             dishes. We source highest-grade domestic ducks such as Iwate and
-            Kyoto Ducks, chemical-free vegetables from a renowned farm in
-            Tochigi, and vegetables direct from Kyoto . Our best recommendation
-            is the exquisite Grilled Kamo (Kamo-Thigh) with Japanese white
-            spring onion, and Shabu-Shabu Hotpot with Rice Straw Smoked Kamo
-            (Aromatic Duck). Kyoto spring onions with rice Straw Smoked
-            Kamo-Thigh, Kamo-Loin, Kamo meatballs are innovative combinations of
-            the ingredients that are only available here. We also pick popular
-            Yamanashi Prefecture Japanese Traditional wines for your enjoyment.
+            Kyoto ducks from a renowned farm in Tochigi, and chemical-free
+            vegetables direct from Kyoto.Our best recommendation is the
+            exquisite grilled Kamo (Kamo-Thigh) with Japanese white spring
+            onion, and shabu-shabu hotpot with Kamo (smoked duck from rice straw
+            ). Kyoto spring onions with smoked Kamo-thigh and Kamo-loin from
+            rice straw, plus Kamo meatballs are innovative combinations of the
+            ingredients that are only available here. We also pick popular
+            Yamanashi Prefecture Japanese traditional wines for your enjoyment.
             Waragamo is an attractive, sophisticated Japanese-modern space,
-            including hideaway-like private rooms in the basement floor. Our
-            restaurant is suited for diner party,dates,entertainment for your
-            clients, business meals, and banquets.
+            including hideaway-like private rooms on the basement floor. Our
+            restaurant is suited for dinner parties, dates,entertainment for
+            your clients, business meals, and banquets.
           </p>
         </div>
       </div>

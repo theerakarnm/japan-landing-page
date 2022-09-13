@@ -1,7 +1,12 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { CloudMenu } from "./";
-import { LazyImage, ImageWithLazyFill, MenuDropdown, SlickCaro } from "../components";
+import {
+  LazyImage,
+  ImageWithLazyFill,
+  MenuDropdown,
+  SlickCaro,
+} from "../components";
 
 type Props = {};
 
@@ -86,7 +91,7 @@ const Section1 = (props: Props) => {
           <div className="flex justify-end items-center z-[9]">
             <div className="cursor-pointer block">
               <a
-                href="https://s.tabelog.com/tokyo/A1320/A132001/13187638/"
+                href="https://yoyaku.toreta.in/waraukamonihahukukitaru"
                 className="cursor-pointer"
               >
                 <div className="cursor-pointer w-[6rem] h-[3rem] rounded transition-all bg-teal-500 hover:bg-teal-600 hover:shadow-lg mx-1 flex justify-center items-center">
@@ -149,11 +154,11 @@ const Section1 = (props: Props) => {
         >
           <div className="flex justify-between items-center px-6">
             <div className="w-[7rem] h-[10rem] block relative mt-2">
-            <Link href="/">
-              <a>
-                <ImageWithLazyFill source="/images/logo.png" />
-              </a>
-            </Link>
+              <Link href="/">
+                <a>
+                  <ImageWithLazyFill source="/images/logo.png" />
+                </a>
+              </Link>
             </div>
             <div className="flex justify-center items-center">
               <div className="cursor-pointer">
@@ -219,7 +224,7 @@ const Section1 = (props: Props) => {
             </div>
           </div>
         </section>
-          <SlickCaro />
+        <SlickCaro />
       </section>
     </>
   );
