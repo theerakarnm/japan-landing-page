@@ -1,52 +1,53 @@
-import React from "react";
-import Link from "next/link";
-import { DropDownElement, SocialMediaLink, LazyImage } from "./";
+import React from 'react';
+import Link from 'next/link';
+import { DropDownElement, SocialMediaLink, LazyImage } from './';
 
 type Props = {};
 
 const MenuDropdown = (props: Props) => {
+  const prefix = 'https://waragamo.eukron.com';
   const dropDownContents = [
     {
-      to: "/WhatNewPage",
-      src: "/images/MenuDuck-1.png",
-      context: ["お知らせ", "What's new"],
-      size: "w-[5rem] h-[5rem] md:w-[7.65rem] md:h-[7.65rem]",
-      margin: "ml-2",
+      to: '/WhatNewPage',
+      src: prefix + '/MenuDuck-1.png',
+      context: ['お知らせ', "What's new"],
+      size: 'w-[5rem] h-[5rem] md:w-[7.65rem] md:h-[7.65rem]',
+      margin: 'ml-2',
     },
     {
-      to: "/Excursive",
-      src: "/images/MenuDuck-2.png",
-      context: ["こだわり", "Excursive"],
-      size: "w-[4rem] h-[4.25rem] md:w-[6.25rem] md:h-[6.25rem]",
-      margin: "ml-8",
+      to: '/Excursive',
+      src: prefix + '/MenuDuck-2.png',
+      context: ['こだわり', 'Excursive'],
+      size: 'w-[4rem] h-[4.25rem] md:w-[6.25rem] md:h-[6.25rem]',
+      margin: 'ml-8',
     },
     {
-      to: "/FoodMenu",
-      src: "/images/MenuDuck-3.png",
-      context: ["お食事", "Food Menu"],
-      size: "w-[4rem] h-[4.25rem] md:w-[6.25rem] md:h-[6.25rem]",
-      margin: "ml-8",
+      to: '/FoodMenu',
+      src: prefix + '/MenuDuck-3.png',
+      context: ['お食事', 'Food Menu'],
+      size: 'w-[4rem] h-[4.25rem] md:w-[6.25rem] md:h-[6.25rem]',
+      margin: 'ml-8',
     },
     {
-      to: "/Drink",
-      src: "/images/MenuDuck-4.png",
-      context: ["お飲み物", "Drinks"],
-      size: "w-[4rem] h-[4.25rem] md:w-[6.25rem] md:h-[6.25rem]",
-      margin: "ml-8",
+      to: '/Drink',
+      src: prefix + '/MenuDuck-4.png',
+      context: ['お飲み物', 'Drinks'],
+      size: 'w-[4rem] h-[4.25rem] md:w-[6.25rem] md:h-[6.25rem]',
+      margin: 'ml-8',
     },
     {
-      to: "/Business",
-      src: "/images/MenuDuck-5.png",
-      context: ["営業時間/アクセス", "Business Hours/Access"],
-      size: "w-[5rem] h-[5rem] md:w-[7.5rem] md:h-[7.5rem]",
-      margin: "ml-2",
+      to: '/Business',
+      src: prefix + '/MenuDuck-5.png',
+      context: ['営業時間/アクセス', 'Business Hours/Access'],
+      size: 'w-[5rem] h-[5rem] md:w-[7.5rem] md:h-[7.5rem]',
+      margin: 'ml-2',
     },
   ];
 
   return (
     <>
-      <div className="my-16 ml-0 sm:ml-6">
-        <div className="flex flex-col justify-center items-start">
+      <div className='my-16 ml-0 sm:ml-6'>
+        <div className='flex flex-col justify-center items-start'>
           {dropDownContents.map((dropDownContent, index) => {
             return (
               <DropDownElement
@@ -60,12 +61,16 @@ const MenuDropdown = (props: Props) => {
             );
           })}
         </div>
-        <div className="flex flex-col md:flex-row justify-center items-center mt-5">
+        <div className='flex flex-col md:flex-row justify-center items-center mt-5'>
           <SocialMediaLink />
-          <div className="flex flex-col justify-center items-center mx-6 my-4">
-            <Link href="/">
+          <div className='flex flex-col justify-center items-center mx-6 my-4'>
+            <Link href='/'>
               <a>
-                <LazyImage source="/images/FooterDuck.png" w={100} h={100} />
+                <LazyImage
+                  source={`${prefix}/FooterDuck.png`}
+                  w={100}
+                  h={100}
+                />
               </a>
             </Link>
           </div>

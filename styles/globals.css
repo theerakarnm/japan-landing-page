@@ -2,22 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&family=Noto+Sans+Thai:wght@200;300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&family=Noto+Sans+Thai:wght@200;300;400;500;600;700&display=swap');
 @font-face {
-  font-family: "ipaexm";
-  src: url("/font/ipaexm.ttf");
-  src: url("/font/ipaexm.ttf") format("ttf"),
-    url("/font/ipaexm.ttf") format("true-type"),
+  font-family: 'ipaexm';
+  src: url('/font/ipaexm.ttf');
+  src: url('/font/ipaexm.ttf') format('ttf'), url('/font/ipaexm.ttf') format('true-type');
 }
 
 body {
-  font-family: 'ipaexm',"M PLUS Rounded 1c", Arial, sans-serif;
+  font-family: 'ipaexm', 'M PLUS Rounded 1c', Arial, sans-serif;
   width: 100vw;
   overflow-x: hidden !important;
 }
 
 .bg-section-1 {
-  background-image: url("/images/background.png");
+  background-image: url('/images/background.png');
 }
 .position-unset {
   position: unset !important;

@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 // import Image from "next/image";
 
 type Props = {
@@ -7,7 +7,10 @@ type Props = {
 };
 
 const ImageWithLazyFill = ({ source, css }: Props) => {
-  const sourceName = source.split("/")[source.split("/").length - 1];
+  const sourceName = source.split('/')[source.split('/').length - 1];
+
+  console.log(source);
+
   return (
     <>
       {/* <Image
@@ -19,7 +22,7 @@ const ImageWithLazyFill = ({ source, css }: Props) => {
         blurDataURL={source}
         objectFit="cover"
       /> */}
-      <div className="flex justify-center">
+      <div className='flex justify-center'>
         <img
           alt={`this is image of ${sourceName}`}
           className={`${css} `}

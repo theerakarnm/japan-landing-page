@@ -1,32 +1,21 @@
-const prefixImage = '/images'
+// const prefixImage = '/images'
+const prefixImage = 'https://waragamo.eukron.com';
 export type NewContent = {
-  id:number
-  title:string
-  description:string
-  srcHeader:string
-  srcContent:string[]
+  id: number
+  title: string
+  description: string
+  srcHeader: string
+  srcContent: string[]
+  linkTo?: string
 }
 
-export const content:NewContent[] = [
+export const content: NewContent[] = [
   {
     id: 1,
     srcHeader: `${prefixImage}/MenuDuckWithLetter-1.png`,
-    title: `2022.06.10 (Fri)`,
-    srcContent: [`${prefixImage}/S__23846944.jpg`,`${prefixImage}/S__23846946.jpg`],
-    description: `ワラガモ7年誕生祭BAKIBAKIさんによるライブペインティングインを1 F の壁にて行います！こにらはYouTube とインスタライブ配信も行います。`,
+    title: `最新情報`,
+    srcContent: [`${prefixImage}/S__23846944.jpg`, `${prefixImage}/S__23846946.jpg`],
+    description: `最新情報はインスタグラムで随時更新中`,
+    linkTo: 'https://www.instagram.com/waragamo/'
   },
-  {
-    id: 2,
-    srcHeader: `${prefixImage}/MenuDuckWithLetter-1.png`,
-    title: `最新情報　Coming Soon`,
-    srcContent: [],
-    description: ``,
-  },
-  {
-    id: 3,
-    srcHeader: `${prefixImage}/MenuDuckWithLetter-1.png`,
-    title: `最新情報　Coming Soon`,
-    srcContent: [],
-    description: ``,
-  }
 ]

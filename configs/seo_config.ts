@@ -20,3 +20,5 @@ export const og_seo: HeadTagOG = {
     google: "",
     google_site_verification: "",
 };
+
+export const PREFIX = 'https://waragamo.eukron.com';

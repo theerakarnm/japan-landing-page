@@ -1,5 +1,6 @@
-import React from "react";
-import Link from "next/link";
+import React from 'react';
+import Link from 'next/link';
+import { PREFIX } from '../configs/seo_config';
 
 type Props = {
   isCol?: boolean;
@@ -8,24 +9,40 @@ type Props = {
 const SocialMediaLink = ({ isCol }: Props) => {
   // TODO: Add social media links
 
-  let col = ''
+  let col = '';
 
-  if(isCol) {
-    col = 'lg:flex-row flex-col'
+  if (isCol) {
+    col = 'lg:flex-row flex-col';
   }
   return (
     <div className={`flex ${col}`}>
-      <div className="mx-1">
-        <Link href="https://facebook.com/waragamo/" target={`_blank`} rel="noopener noreferrer">
+      <div className='mx-1'>
+        <Link
+          href='https://facebook.com/waragamo/'
+          target={`_blank`}
+          rel='noopener noreferrer'>
           <a>
-            <img src="/images/facebook.png" alt="facebook link" width={60} height={60} />
+            <img
+              src={`${PREFIX}/facebook.png`}
+              alt='facebook link'
+              width={60}
+              height={60}
+            />
           </a>
         </Link>
       </div>
-      <div className="mx-1">
-        <Link href="https://instagram.com/waragamo" target={`_blank`} rel="noopener noreferrer">
+      <div className='mx-1'>
+        <Link
+          href='https://instagram.com/waragamo'
+          target={`_blank`}
+          rel='noopener noreferrer'>
           <a>
-            <img src="/images/instagram.png" alt="instagram link" width={60} height={60} />
+            <img
+              src={`${PREFIX}/instagram.png`}
+              alt='instagram link'
+              width={60}
+              height={60}
+            />
           </a>
         </Link>
       </div>
